@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.comp-value-props {
+    background: linear-gradient(#f9f1ff, #fff 20%);
+}
+.o-content-container {
+    margin: 0 auto;
+    padding: 0 8vw;
+}
+.comp-value-props .comp-value-props__content {
+    justify-content: space-between;
+    margin: 0 auto;
+    display: flex;
+    padding: 10rem 0;
+}
+.comp-value-props .comp-value-props__content-reduced-motion .comp-value-props__card {
+    justify-content: space-between;
+    margin-bottom: 24rem;
+    display: flex
+;
+}
+.comp-value-props .comp-value-props__card-text {
+    max-width: 27.5rem;
+  }
+  .comp-value-props .comp-value-props__card-text .comp-value-props__card-text-header {
+	text-transform: uppercase;
+	align-items: center;
+	column-gap: .75rem;
+	padding-bottom: 1rem;
+	font-size: .875rem;
+	font-weight: 700;
+	display: flex;
+}
+.comp-value-props .comp-value-props__card-text .comp-value-props__card-text-subheader {
+    padding-bottom: 1rem;
+    font-size: 2rem;
+  }
+  .comp-value-props .comp-value-props__card-text .comp-value-props__card-text-main {
+    font-size: 1.125rem;
+  }
+  .comp-value-props .comp-value-props__card-text .comp-value-props__card-text-bottom {
+    align-items: center;
+    column-gap: 1rem;
+    padding-top: 3rem;
+    display: flex;
+  }
+  .comp-value-props .comp-value-props__card-text .comp-value-props__card-text-number {
+    color: #9602c7;
+    font-size: 3.125rem;
+    font-weight: 600;
+    display: flex;
+  }
+  .comp-value-props .comp-value-props__card-text .comp-value-props__card-text-number-info {
+    flex: 2;
+    font-size: 1.125rem;
+  }
+  sup {
+    top: -.5em;
+  }
+  sub, sup {
+    vertical-align: baseline;
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+  }
+  .comp-value-props .comp-value-props__card-asset {
+    display: none;
+  }
+  .comp-value-props .comp-value-props__card-asset-content {
+    justify-content: center;
+    height: auto;
+    display: flex;
+    position: relative;
+  }
+  .comp-value-props .comp-value-props__content-animated .comp-value-props__card-asset-content {
+    position: sticky;
+    top: 25%;
+  }
+  .comp-value-props .comp-value-props__content-animated .comp-value-props__card-asset-content video {
+    height: 0;
+  }
+  .comp-value-props .comp-value-props__content-animated:not(.should-hide) video {
+    opacity: 1;
+    animation: .35s forwards showVidAnimation;
+  }
+  @keyframes showVidAnimation {
+    0% {
+        opacity: 0;
+        transform: scale(.9)translate(10%);
+      }
+      90% {
+        opacity: 1;
+        transform: scale(1.03);
+      }
+      100% {
+        opacity: 1;
+      }
+  }
+  .comp-value-props .comp-value-props__card-asset-content .comp-value-props__card-asset-video {
+    z-index: 1;
+    border-radius: .5rem;
+    max-width: 600px;
+  }
+ video {
+    vertical-align: baseline;
+    display: inline-block;
+  }
+  .comp-value-props .comp-value-props__content-animated .comp-value-props__card-asset-content video.active {
+    height: auto;
+  }
+  .comp-value-props .comp-value-props__card-asset-content .comp-value-props__card-asset-decoration {
+    z-index: 0;
+    position: absolute;
+    top: -17%;
+    left: 18%;
+  }
+  svg:not(:root) {
+    overflow: hidden;
+  }
+  .comp-value-props .comp-value-props__content-animated .comp-value-props__card-asset-decoration {
+    z-index: -1;
+  }
+  svg:not(:root) {
+    overflow: hidden;
+  }
+
+
+
+
+
+
+@media screen and (width >= 48rem) {
+    .o-content-container {
+        padding: 0 4vw;
+    }
+}
+@media screen and (width >= 84.875rem) {
+    .o-content-container {
+        padding: 0;
+    }
+    .o-content-container {
+        max-width: 76.875rem;
+        padding: 0;
+    }
+}
+@media screen and (width >= 84.875rem) {
+    .o-content-container {
+        max-width: 76.875rem;
+        padding: 0;
+    }
+}
