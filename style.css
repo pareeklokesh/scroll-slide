@@ -105,6 +105,7 @@
     z-index: 1;
     border-radius: .5rem;
     max-width: 600px;
+    width: 600px;
   }
  video {
     vertical-align: baseline;
