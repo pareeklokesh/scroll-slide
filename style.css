@@ -36,11 +36,32 @@
 	display: flex;
 }
 .comp-value-props .comp-value-props__card-text .comp-value-props__card-text-subheader {
-    padding-bottom: 1rem;
-    font-size: 2rem;
+    font-weight: var(--keydesign-h2-font-weight);
+margin-bottom: 12px;
+  transition: var(--global-transition);
+text-align: center;
+  letter-spacing: -.75px;
+  font-size: 3.125rem;
+line-height: 3.5rem;
+  margin-top: unset !important;
+  color: #000;
+  }
+  .comp-value-props__card-text-subheader span {
+    color: var( --e-global-color-f1e3bf4 );
+    display: block;
   }
   .comp-value-props .comp-value-props__card-text .comp-value-props__card-text-main {
     font-size: 1.125rem;
+  font-size: 17px;
+  margin-bottom: 10px;
+  font-family: var(--e-global-typography-text-font-family);
+  font-weight: var(--e-global-typography-text-font-weight);
+  font-size: var(--font-size-paragraphs);
+  line-height: var(--line-height-paragraph);
+  letter-spacing: 0em;
+  text-transform: none;
+  font-style: normal;
+  color: var(--color-text);
   }
   .comp-value-props .comp-value-props__card-text .comp-value-props__card-text-bottom {
     align-items: center;
@@ -107,7 +128,7 @@
     max-width: 600px;
     width: 600px;
   }
- video {
+  .comp-value-props__content-animated video {
     vertical-align: baseline;
     display: inline-block;
   }
@@ -128,6 +149,78 @@
   }
   svg:not(:root) {
     overflow: hidden;
+  }
+
+  .comp-value-props__card-text .ekit-btn-wraper a {
+	overflow: hidden;
+	background-color: #6000AC;
+	border-style: none;
+	padding: 17px 20px 17px 20px;
+	text-decoration: none;
+	border-radius: var(--button-border-radius);
+	transition: var(--global-transition);
+	font-size: var(--font-size-default);
+	font-family: var(--e-global-typography-accent-font-family);
+	font-weight: var(--e-global-typography-accent-font-weight);
+	position: relative;
+	align-items: center;
+	display: inline-flex;
+	color: #fff;
+	line-height: 1;
+	user-select: none;
+	vertical-align: middle;
+	text-align: center;
+	outline: 0;
+	box-shadow: none;
+	white-space: normal !important;
+}
+.comp-value-props__card-text .ekit-btn-wraper a i {
+    margin-left: 10px;
+    font-size: 15px;
+    display: inline-block;
+  }
+  .comp-value-props__card-text .ekit-btn-wraper a::before {
+	position: absolute;
+	content: "";
+	border-radius: inherit;
+	-webkit-transition: all .4s ease;
+	transition: all .4s ease;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-size: 102% 102%;
+	opacity: 0;
+    transition: var(--global-transition);
+}
+  .comp-value-props__card-text .ekit-btn-wraper a:hover::before {
+    opacity: 1;
+  }
+  .comp-value-props__card-text .ekit-btn-wraper a::after {
+    content: attr(data-text);
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    opacity: 0;
+    transform: translate(0, 100%);
+    transition: opacity 0.2s, transform 0.2s;
+      transition-timing-function: ease, ease;
+    transition-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    white-space: nowrap;}
+
+  .comp-value-props__card-text .ekit-btn-wraper a:hover::after {
+    transform: translate(0%, -50%);
+    opacity: 1;
+  }
+  .comp-value-props__card-text .ekit-btn-wraper a:hover .button-wrapper {
+    transform: translateY(-150%);
+    opacity: 0;
+  }
+  .comp-value-props__card-text .ekit-btn-wraper a .button-wrapper {
+    transition: opacity 0.2s, transform 0.2s;
+      transition-timing-function: ease, ease;
+    transition-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
   }
 
 
