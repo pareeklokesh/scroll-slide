@@ -79,6 +79,7 @@
   .comp-value-props .comp-value-props__content-animated .comp-value-props__card-asset-content {
     position: sticky;
     top: 25%;
+    width: 600px;
   }
   .comp-value-props .comp-value-props__content-animated .comp-value-props__card-asset-content video {
     height: 0;
